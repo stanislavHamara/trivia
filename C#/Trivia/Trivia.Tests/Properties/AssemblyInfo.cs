@@ -1,17 +1,16 @@
 ﻿using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
-using ApprovalTests.Reporters;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Trivia")]
+[assembly: AssemblyTitle("Trivia.Tests")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Hewlett-Packard Company")]
-[assembly: AssemblyProduct("Trivia")]
-[assembly: AssemblyCopyright("Copyright © Hewlett-Packard Company 2011")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("Trivia.Tests")]
+[assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -21,7 +20,7 @@ using ApprovalTests.Reporters;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("cb7a7812-26eb-42fb-8a7d-a37933093ed1")]
+[assembly: Guid("ef7aec21-0205-45d2-b858-d8c3e51529ee")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -35,4 +34,3 @@ using ApprovalTests.Reporters;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
-[assembly: UseReporter(typeof(DiffReporter))]

@@ -156,7 +156,7 @@ namespace UglyTrivia
             return RockCategory;
         }
 
-        public bool wasCorrectlyAnswered()
+        public bool AnswerCorrectly()
         {
             if (inPenaltyBox[currentPlayer])
             {

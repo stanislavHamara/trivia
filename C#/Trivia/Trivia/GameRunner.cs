@@ -33,7 +33,7 @@ namespace Trivia
                 }
                 else
                 {
-                    notAWinner = aGame.wasCorrectlyAnswered();
+                    notAWinner = aGame.AnswerCorrectly();
                 }
 
 

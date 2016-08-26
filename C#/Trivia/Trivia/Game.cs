@@ -55,7 +55,7 @@ namespace UglyTrivia
             return (numberOfPlayers() >= MinimumNumberOfPlayers);
         }
 
-        public bool add(String playerName)
+        public bool AddPlayer(String playerName)
         {
 
 

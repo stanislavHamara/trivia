@@ -13,6 +13,7 @@ namespace UglyTrivia
         private const string SportsCategory = "Sports";
         private const string RockCategory = "Rock";
         private const int MaximumNumberOfPlayers = 6;
+        private const int MinimumNumberOfPlayers = 2;
 
 
         List<string> players = new List<string>();
@@ -48,7 +49,7 @@ namespace UglyTrivia
 
         public bool isPlayable()
         {
-            return (numberOfPlayers() >= 2);
+            return (numberOfPlayers() >= MinimumNumberOfPlayers);
         }
 
         public bool add(String playerName)

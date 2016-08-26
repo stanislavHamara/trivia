@@ -14,6 +14,8 @@ namespace UglyTrivia
         private const string RockCategory = "Rock";
         private const int MaximumNumberOfPlayers = 6;
         private const int MinimumNumberOfPlayers = 2;
+        private const string AnswerWasCorrectMessage = "Answer was correct!!!!";
+        private const string AnswerWasIncorrectMessage = "Question was incorrectly answered";
 
 
         List<string> players = new List<string>();
@@ -159,7 +161,7 @@ namespace UglyTrivia
             {
                 if (isGettingOutOfPenaltyBox)
                 {
-                    Console.WriteLine("Answer was correct!!!!");
+                    Console.WriteLine(AnswerWasCorrectMessage);
                     purses[currentPlayer]++;
                     Console.WriteLine(players[currentPlayer]
                             + " now has "
@@ -185,7 +187,7 @@ namespace UglyTrivia
             else
             {
 
-                Console.WriteLine("Answer was correct!!!!");
+                Console.WriteLine(AnswerWasCorrectMessage);
                 purses[currentPlayer]++;
                 Console.WriteLine(players[currentPlayer]
                         + " now has "
@@ -202,7 +204,7 @@ namespace UglyTrivia
 
         public bool wrongAnswer()
         {
-            Console.WriteLine("Question was incorrectly answered");
+            Console.WriteLine(AnswerWasIncorrectMessage);
             Console.WriteLine(players[currentPlayer] + " was sent to the penalty box");
             inPenaltyBox[currentPlayer] = true;
 

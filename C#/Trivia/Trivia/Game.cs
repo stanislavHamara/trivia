@@ -16,6 +16,7 @@ namespace UglyTrivia
         private const int MinimumNumberOfPlayers = 2;
         private const string AnswerWasCorrectMessage = "Answer was correct!!!!";
         private const string AnswerWasIncorrectMessage = "Question was incorrectly answered";
+        private const int FinalBoardPosition = 11;
 
 
         List<string> players = new List<string>();
@@ -86,7 +87,7 @@ namespace UglyTrivia
 
                     Console.WriteLine(players[currentPlayer] + " is getting out of the penalty box");
                     boardPosition[currentPlayer] = boardPosition[currentPlayer] + roll;
-                    if (boardPosition[currentPlayer] > 11) boardPosition[currentPlayer] = boardPosition[currentPlayer] - 12;
+                    if (boardPosition[currentPlayer] > FinalBoardPosition) boardPosition[currentPlayer] = boardPosition[currentPlayer] - 12;
 
                     Console.WriteLine(players[currentPlayer]
                             + "'s new location is "
@@ -105,7 +106,7 @@ namespace UglyTrivia
             {
 
                 boardPosition[currentPlayer] = boardPosition[currentPlayer] + roll;
-                if (boardPosition[currentPlayer] > 11) boardPosition[currentPlayer] = boardPosition[currentPlayer] - 12;
+                if (boardPosition[currentPlayer] > FinalBoardPosition) boardPosition[currentPlayer] = boardPosition[currentPlayer] - 12;
 
                 Console.WriteLine(players[currentPlayer]
                         + "'s new location is "
